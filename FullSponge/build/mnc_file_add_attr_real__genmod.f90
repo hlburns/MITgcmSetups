@@ -1,0 +1,13 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Thu Oct 16 16:32:01 2014
+        MODULE MNC_FILE_ADD_ATTR_REAL__genmod
+          INTERFACE 
+            SUBROUTINE MNC_FILE_ADD_ATTR_REAL(FNAME,ATNAME,LEN,RVAL,    &
+     &MYTHID)
+              CHARACTER(*) :: FNAME
+              CHARACTER(*) :: ATNAME
+              INTEGER(KIND=4) :: LEN
+              REAL(KIND=4) :: RVAL
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MNC_FILE_ADD_ATTR_REAL
+          END INTERFACE 
+        END MODULE MNC_FILE_ADD_ATTR_REAL__genmod

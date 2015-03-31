@@ -1,0 +1,9 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Thu Oct 16 16:33:25 2014
+        MODULE LEF_ZERO__genmod
+          INTERFACE 
+            SUBROUTINE LEF_ZERO(ARR,MYTHID)
+              REAL(KIND=8) :: ARR(-3:54,-3:54,1,1)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE LEF_ZERO
+          END INTERFACE 
+        END MODULE LEF_ZERO__genmod

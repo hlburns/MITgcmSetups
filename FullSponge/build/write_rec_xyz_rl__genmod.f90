@@ -1,0 +1,12 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Thu Oct 16 16:32:36 2014
+        MODULE WRITE_REC_XYZ_RL__genmod
+          INTERFACE 
+            SUBROUTINE WRITE_REC_XYZ_RL(FNAME,FIELD,IREC,MYITER,MYTHID)
+              CHARACTER(*) :: FNAME
+              REAL(KIND=8) :: FIELD(-3:54,-3:54,30,1,1)
+              INTEGER(KIND=4) :: IREC
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE WRITE_REC_XYZ_RL
+          END INTERFACE 
+        END MODULE WRITE_REC_XYZ_RL__genmod

@@ -1,0 +1,7 @@
+ln -sf tidy_files/mtidy.140 mtidy
+chmod 755 mtidy
+mtidy
+rm -f STDER*
+cp -p 140-160.mnc/pickup*9676800* .
+ln -sf data_files/data.9676800* data
+sbatch run.script.128

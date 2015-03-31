@@ -1,0 +1,9 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Thu Oct 16 16:34:10 2014
+        MODULE PORT_RANARR__genmod
+          INTERFACE 
+            SUBROUTINE PORT_RANARR(N,ARR)
+              INTEGER(KIND=4) :: N
+              REAL(KIND=8) :: ARR(N)
+            END SUBROUTINE PORT_RANARR
+          END INTERFACE 
+        END MODULE PORT_RANARR__genmod

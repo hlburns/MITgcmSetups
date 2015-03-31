@@ -1,0 +1,13 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Thu Oct 16 16:32:31 2014
+        MODULE READ_GLVEC_RS__genmod
+          INTERFACE 
+            SUBROUTINE READ_GLVEC_RS(PREF,SUFF,ARRAY,SIZARR,IREC,MYTHID)
+              INTEGER(KIND=4) :: SIZARR
+              CHARACTER(*) :: PREF
+              CHARACTER(*) :: SUFF
+              REAL(KIND=8) :: ARRAY(SIZARR)
+              INTEGER(KIND=4) :: IREC
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE READ_GLVEC_RS
+          END INTERFACE 
+        END MODULE READ_GLVEC_RS__genmod

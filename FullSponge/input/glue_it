@@ -1,0 +1,76 @@
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/0-20all.nc 0-20.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/0-20Psi.nc 0-20.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/20-40all.nc 20-40.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/20-40Psi.nc 20-40.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/40-60all.nc 40-60.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/40-60Psi.nc 40-60.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/60-80all.nc 60-80.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/60-80Psi.nc 60-80.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/80-100all.nc 80-100.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/80-100Psi.nc 80-100.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/100-120all.nc 100-120.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/100-120Psi.nc 100-120.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/120-140all.nc 120-140.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/120-140Psi.nc 120-140.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/140-160all.nc 140-160.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/140-160Psi.nc 140-160.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/160-180all.nc 160-180.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/160-180Psi.nc 160-180.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/180-200all.nc 180-200.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/180-200Psi.nc 180-200.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/200-220all.nc 200-220.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/200-220Psi.nc 200-220.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/220-240all.nc 220-240.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/220-240Psi.nc 220-240.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/240-241all.nc 240-241.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/240-241Psi.nc 240-241mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/241-242all.nc 241-242.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/241-242Psi.nc 241-242.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/242-243all.nc 242-243.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/242-243Psi.nc 242-243.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/243-244all.nc 243-244.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/243-244Psi.nc 243-244.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/244-245all.nc 244-245.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/244-245Psi.nc 244-245.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/245-255all.nc 245-255.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/245-255Psi.nc 245-255.mnc/mnc_out_0*/Psi*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/255-260all.nc 255-260.mnc/mnc_out_0*/VT*.nc &
+wait
+gluemncbig -q -o /hpcdata/scratch/hb1g13/3daynokpp/255-260Psi.nc 255-260.mnc/mnc_out_0*/Psi*.nc &
+

@@ -1,0 +1,11 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Thu Oct 16 16:32:03 2014
+        MODULE MNC_VAR_WRITE_DBL__genmod
+          INTERFACE 
+            SUBROUTINE MNC_VAR_WRITE_DBL(FNAME,VNAME,VAR,MYTHID)
+              CHARACTER(*) :: FNAME
+              CHARACTER(*) :: VNAME
+              REAL(KIND=8) :: VAR(*)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MNC_VAR_WRITE_DBL
+          END INTERFACE 
+        END MODULE MNC_VAR_WRITE_DBL__genmod

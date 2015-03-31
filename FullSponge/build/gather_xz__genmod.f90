@@ -1,0 +1,10 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Thu Oct 16 16:33:21 2014
+        MODULE GATHER_XZ__genmod
+          INTERFACE 
+            SUBROUTINE GATHER_XZ(GLOBAL,LOCAL,MYTHID)
+              REAL(KIND=8) :: GLOBAL(800)
+              REAL(KIND=8) :: LOCAL(-3:54,1,1)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE GATHER_XZ
+          END INTERFACE 
+        END MODULE GATHER_XZ__genmod

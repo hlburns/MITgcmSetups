@@ -1,0 +1,8 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Thu Oct 16 16:33:32 2014
+        MODULE MACHINE__genmod
+          INTERFACE 
+            SUBROUTINE MACHINE(STRING)
+              CHARACTER(*) :: STRING
+            END SUBROUTINE MACHINE
+          END INTERFACE 
+        END MODULE MACHINE__genmod

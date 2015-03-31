@@ -1,0 +1,20 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Thu Oct 16 16:31:51 2014
+        MODULE MDS_WRITELOCAL__genmod
+          INTERFACE 
+            SUBROUTINE MDS_WRITELOCAL(FNAME,FILEPREC,GLOBFILE,ARRTYPE,  &
+     &NNZ,FLDRL,FLDRS,BIARG,BJARG,IRECORD,MYITER,MYTHARG)
+              CHARACTER(*) :: FNAME
+              INTEGER(KIND=4) :: FILEPREC
+              LOGICAL(KIND=4) :: GLOBFILE
+              CHARACTER(LEN=2) :: ARRTYPE
+              INTEGER(KIND=4) :: NNZ
+              REAL(KIND=8) :: FLDRL(*)
+              REAL(KIND=8) :: FLDRS(*)
+              INTEGER(KIND=4) :: BIARG
+              INTEGER(KIND=4) :: BJARG
+              INTEGER(KIND=4) :: IRECORD
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHARG
+            END SUBROUTINE MDS_WRITELOCAL
+          END INTERFACE 
+        END MODULE MDS_WRITELOCAL__genmod

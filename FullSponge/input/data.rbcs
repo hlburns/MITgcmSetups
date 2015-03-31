@@ -1,0 +1,9 @@
+# RBCS package parameters:
+ &RBCS_PARM01
+#Relaxtion time 3 days
+   tauRelaxT=259200.,
+   relaxMaskFile(1)='T.msk',
+   relaxTFile='T_Sponge',
+   useRBCtemp=.TRUE.,
+ &
+

@@ -1,0 +1,8 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Thu Oct 16 16:32:00 2014
+        MODULE MNC_DUMP__genmod
+          INTERFACE 
+            SUBROUTINE MNC_DUMP(MYTHID)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MNC_DUMP
+          END INTERFACE 
+        END MODULE MNC_DUMP__genmod

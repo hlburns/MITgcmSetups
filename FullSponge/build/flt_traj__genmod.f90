@@ -1,0 +1,10 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Thu Oct 16 16:31:20 2014
+        MODULE FLT_TRAJ__genmod
+          INTERFACE 
+            SUBROUTINE FLT_TRAJ(MYTIME,MYITER,MYTHID)
+              REAL(KIND=8) :: MYTIME
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE FLT_TRAJ
+          END INTERFACE 
+        END MODULE FLT_TRAJ__genmod

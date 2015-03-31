@@ -1,0 +1,22 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Thu Oct 16 16:31:51 2014
+        MODULE MDS_WRITE_FIELD__genmod
+          INTERFACE 
+            SUBROUTINE MDS_WRITE_FIELD(FNAME,FILEPREC,GLOBALFILE,       &
+     &USECURRENTDIR,ARRTYPE,KSIZE,KLO,KHI,FLDRL,FLDRS,JRECORD,MYITER,   &
+     &MYTHID)
+              CHARACTER(*) :: FNAME
+              INTEGER(KIND=4) :: FILEPREC
+              LOGICAL(KIND=4) :: GLOBALFILE
+              LOGICAL(KIND=4) :: USECURRENTDIR
+              CHARACTER(LEN=2) :: ARRTYPE
+              INTEGER(KIND=4) :: KSIZE
+              INTEGER(KIND=4) :: KLO
+              INTEGER(KIND=4) :: KHI
+              REAL(KIND=8) :: FLDRL(*)
+              REAL(KIND=8) :: FLDRS(*)
+              INTEGER(KIND=4) :: JRECORD
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MDS_WRITE_FIELD
+          END INTERFACE 
+        END MODULE MDS_WRITE_FIELD__genmod

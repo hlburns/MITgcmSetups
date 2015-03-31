@@ -1,0 +1,7 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Thu Oct 16 16:32:44 2014
+        MODULE EEDIE__genmod
+          INTERFACE 
+            SUBROUTINE EEDIE
+            END SUBROUTINE EEDIE
+          END INTERFACE 
+        END MODULE EEDIE__genmod

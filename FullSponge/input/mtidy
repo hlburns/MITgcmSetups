@@ -1,0 +1,12 @@
+if [ ! -e 279-280.mnc ]
+then
+  mkdir 279-280.mnc
+fi
+
+mv mnc_out_0*        279-280.mnc
+mv STDOUT.0*         279-280.mnc
+mv MITgcm*           279-280.mnc
+mv socn.output       279-280.mnc
+mv *.data            279-280.mnc
+mv *.meta            279-280.mnc
+cp -p data           279-280.mnc
