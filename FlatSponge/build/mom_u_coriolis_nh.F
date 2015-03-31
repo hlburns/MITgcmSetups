@@ -1,1 +1,0 @@
-/home/hb1g13/MITgcm/MITgcm/pkg/mom_common/mom_u_coriolis_nh.F

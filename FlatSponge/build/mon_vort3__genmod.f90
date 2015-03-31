@@ -1,9 +1,0 @@
-        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:31:38 2014
-        MODULE MON_VORT3__genmod
-          INTERFACE 
-            SUBROUTINE MON_VORT3(MYITER,MYTHID)
-              INTEGER(KIND=4) :: MYITER
-              INTEGER(KIND=4) :: MYTHID
-            END SUBROUTINE MON_VORT3
-          END INTERFACE 
-        END MODULE MON_VORT3__genmod

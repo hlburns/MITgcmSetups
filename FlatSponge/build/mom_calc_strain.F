@@ -1,1 +1,0 @@
-/home/hb1g13/MITgcm/MITgcm/pkg/mom_common/mom_calc_strain.F

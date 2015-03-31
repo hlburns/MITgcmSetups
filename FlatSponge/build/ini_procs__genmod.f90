@@ -1,7 +1,0 @@
-        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:32:34 2014
-        MODULE INI_PROCS__genmod
-          INTERFACE 
-            SUBROUTINE INI_PROCS
-            END SUBROUTINE INI_PROCS
-          END INTERFACE 
-        END MODULE INI_PROCS__genmod

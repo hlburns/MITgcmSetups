@@ -1,9 +1,0 @@
-        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:30:06 2014
-        MODULE DEBUG_ENTER__genmod
-          INTERFACE 
-            SUBROUTINE DEBUG_ENTER(TEXT,MYTHID)
-              CHARACTER(*) :: TEXT
-              INTEGER(KIND=4) :: MYTHID
-            END SUBROUTINE DEBUG_ENTER
-          END INTERFACE 
-        END MODULE DEBUG_ENTER__genmod

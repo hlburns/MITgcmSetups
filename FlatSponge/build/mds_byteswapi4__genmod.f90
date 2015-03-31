@@ -1,9 +1,0 @@
-        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:32:36 2014
-        MODULE MDS_BYTESWAPI4__genmod
-          INTERFACE 
-            SUBROUTINE MDS_BYTESWAPI4(N,ARR)
-              INTEGER(KIND=4) :: N
-              CHARACTER(*) :: ARR
-            END SUBROUTINE MDS_BYTESWAPI4
-          END INTERFACE 
-        END MODULE MDS_BYTESWAPI4__genmod
