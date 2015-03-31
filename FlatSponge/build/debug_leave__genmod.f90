@@ -1,0 +1,9 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:30:07 2014
+        MODULE DEBUG_LEAVE__genmod
+          INTERFACE 
+            SUBROUTINE DEBUG_LEAVE(TEXT,MYTHID)
+              CHARACTER(*) :: TEXT
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE DEBUG_LEAVE
+          END INTERFACE 
+        END MODULE DEBUG_LEAVE__genmod

@@ -1,0 +1,14 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:31:04 2014
+        MODULE MNC_CW_GET_CITER__genmod
+          INTERFACE 
+            SUBROUTINE MNC_CW_GET_CITER(FGNAME,IGROUP,IFLAG,IVAL_CURR,  &
+     &IVAL_NEXT,MYTHID)
+              CHARACTER(*) :: FGNAME
+              INTEGER(KIND=4) :: IGROUP
+              INTEGER(KIND=4) :: IFLAG
+              INTEGER(KIND=4) :: IVAL_CURR
+              INTEGER(KIND=4) :: IVAL_NEXT
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MNC_CW_GET_CITER
+          END INTERFACE 
+        END MODULE MNC_CW_GET_CITER__genmod

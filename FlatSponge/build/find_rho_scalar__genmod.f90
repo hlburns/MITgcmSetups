@@ -1,0 +1,12 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:33:00 2014
+        MODULE FIND_RHO_SCALAR__genmod
+          INTERFACE 
+            SUBROUTINE FIND_RHO_SCALAR(TLOC,SLOC,PLOC,RHOLOC,MYTHID)
+              REAL(KIND=8) :: TLOC
+              REAL(KIND=8) :: SLOC
+              REAL(KIND=8) :: PLOC
+              REAL(KIND=8) :: RHOLOC
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE FIND_RHO_SCALAR
+          END INTERFACE 
+        END MODULE FIND_RHO_SCALAR__genmod

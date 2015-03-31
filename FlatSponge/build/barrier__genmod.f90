@@ -1,0 +1,8 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:31:52 2014
+        MODULE BARRIER__genmod
+          INTERFACE 
+            SUBROUTINE BARRIER(MYTHID)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE BARRIER
+          END INTERFACE 
+        END MODULE BARRIER__genmod

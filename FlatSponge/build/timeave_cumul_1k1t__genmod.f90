@@ -1,0 +1,16 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:31:47 2014
+        MODULE TIMEAVE_CUMUL_1K1T__genmod
+          INTERFACE 
+            SUBROUTINE TIMEAVE_CUMUL_1K1T(FLDTAVE,FLD,DELTATLOC,KSIZE,K,&
+     &BI,BJ,MYTHID)
+              INTEGER(KIND=4) :: KSIZE
+              REAL(KIND=8) :: FLDTAVE(-3:54,-3:54,KSIZE,1,1)
+              REAL(KIND=8) :: FLD(-3:54,-3:54)
+              REAL(KIND=8) :: DELTATLOC
+              INTEGER(KIND=4) :: K
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE TIMEAVE_CUMUL_1K1T
+          END INTERFACE 
+        END MODULE TIMEAVE_CUMUL_1K1T__genmod

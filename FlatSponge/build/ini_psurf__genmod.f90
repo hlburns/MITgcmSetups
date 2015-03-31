@@ -1,0 +1,8 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:33:13 2014
+        MODULE INI_PSURF__genmod
+          INTERFACE 
+            SUBROUTINE INI_PSURF(MYTHID)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE INI_PSURF
+          END INTERFACE 
+        END MODULE INI_PSURF__genmod

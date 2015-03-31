@@ -1,0 +1,9 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:32:42 2014
+        MODULE ILNBLNK__genmod
+          INTERFACE 
+            FUNCTION ILNBLNK(STRING)
+              CHARACTER(*) :: STRING
+              INTEGER(KIND=4) :: ILNBLNK
+            END FUNCTION ILNBLNK
+          END INTERFACE 
+        END MODULE ILNBLNK__genmod

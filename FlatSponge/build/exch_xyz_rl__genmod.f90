@@ -1,0 +1,9 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:32:27 2014
+        MODULE EXCH_XYZ_RL__genmod
+          INTERFACE 
+            SUBROUTINE EXCH_XYZ_RL(PHI,MYTHID)
+              REAL(KIND=8) :: PHI(-3:54,-3:54,1:30,1,1)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE EXCH_XYZ_RL
+          END INTERFACE 
+        END MODULE EXCH_XYZ_RL__genmod

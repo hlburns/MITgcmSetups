@@ -1,0 +1,10 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:30:27 2014
+        MODULE FLT_EXCH2__genmod
+          INTERFACE 
+            SUBROUTINE FLT_EXCH2(MYTIME,MYITER,MYTHID)
+              REAL(KIND=8) :: MYTIME
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE FLT_EXCH2
+          END INTERFACE 
+        END MODULE FLT_EXCH2__genmod

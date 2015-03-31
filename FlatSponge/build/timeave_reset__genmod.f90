@@ -1,0 +1,12 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:31:50 2014
+        MODULE TIMEAVE_RESET__genmod
+          INTERFACE 
+            SUBROUTINE TIMEAVE_RESET(FLDTAVE,KSIZE,BI,BJ,MYTHID)
+              INTEGER(KIND=4) :: KSIZE
+              REAL(KIND=8) :: FLDTAVE(-3:54,-3:54,KSIZE,1,1)
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE TIMEAVE_RESET
+          END INTERFACE 
+        END MODULE TIMEAVE_RESET__genmod

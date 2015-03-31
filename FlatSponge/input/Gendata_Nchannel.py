@@ -1,4 +1,3 @@
-
 # coding: utf-8
 
 ## Generate model inputs
@@ -280,38 +279,3 @@ plt.gca().invert_yaxis()
 plt.title('Mask Matrix')
 plt.ylabel('Depth (m)')
 plt.xlabel('Meridional Distance (km)')
-
-
-# In[118]:
-
-if BC=="Diffusion":
-        #Background
-        diffusi=(1e-5)*np.ones((nz,ny,nx))
-        # Linear ramp
-        for k in range(0,nz):
-           for i in range(0,int(nx)):
-               diffusi[k,ny-20:ny,i]=0.00025+500*(np.divide((Y[i,ny-21:ny-1]-Y[i,ny-21]),                                                            (Y[i,ny-1]-Y[i,ny-21])))                **2*diffusi[k,ny-21:ny-1,i]#*(1-exp(-z[k]/(N))-exp(-(H)/(N)))/(1-exp(-(H)/(N)))
-               # Enhance at the surface
-        for k in range(0,3):
-            for i in range(0,int(nx)):
-                diffusi[k,:,i]=np.maximum(0.002*((z[nz-1-k]/H)**2)                                          *(1-np.divide(2*abs(Y[i,:]),(2*Ly))),diffusi[k,:,i])
-        # Write to binary
-        writeFile('diffusi.bin',diffusi)
-        # netcdf check
-        f=netcdf.netcdf_file('diffusi.nc','w')
-        f.createDimension('Z',nz)
-        f.createDimension('Y',ny)
-        f.createDimension('X',nx)
-        Diff=f.createVariable('Diffusi','double',('Z','Y','X'))
-        Diff[:]=diffusi
-        f.close()
-        plt.contourf(y/1000,z,diffusi[:,:,150],24,cm=cm.Spectral)
-        cbar = plt.colorbar()
-        plt.gca().invert_yaxis()
-        
-
-
-# In[ ]:
-
-
-

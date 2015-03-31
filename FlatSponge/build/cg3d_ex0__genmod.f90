@@ -1,0 +1,15 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:32:50 2014
+        MODULE CG3D_EX0__genmod
+          INTERFACE 
+            SUBROUTINE CG3D_EX0(CG3D_B,CG3D_X,FIRSTRESIDUAL,LASTRESIDUAL&
+     &,NUMITERS,MYITER,MYTHID)
+              REAL(KIND=8) :: CG3D_B(-3:54,-3:54,30,1,1)
+              REAL(KIND=8) :: CG3D_X(-3:54,-3:54,30,1,1)
+              REAL(KIND=8) :: FIRSTRESIDUAL
+              REAL(KIND=8) :: LASTRESIDUAL
+              INTEGER(KIND=4) :: NUMITERS
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE CG3D_EX0
+          END INTERFACE 
+        END MODULE CG3D_EX0__genmod

@@ -1,0 +1,8 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:33:25 2014
+        MODULE SET_PARMS__genmod
+          INTERFACE 
+            SUBROUTINE SET_PARMS(MYTHID)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE SET_PARMS
+          END INTERFACE 
+        END MODULE SET_PARMS__genmod

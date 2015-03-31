@@ -1,0 +1,8 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:33:06 2014
+        MODULE EOS_CHECK__genmod
+          INTERFACE 
+            SUBROUTINE EOS_CHECK(MYTHID)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE EOS_CHECK
+          END INTERFACE 
+        END MODULE EOS_CHECK__genmod

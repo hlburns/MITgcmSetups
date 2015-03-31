@@ -1,0 +1,7 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:32:37 2014
+        MODULE MEMSYNC__genmod
+          INTERFACE 
+            SUBROUTINE MEMSYNC
+            END SUBROUTINE MEMSYNC
+          END INTERFACE 
+        END MODULE MEMSYNC__genmod

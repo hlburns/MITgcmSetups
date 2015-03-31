@@ -1,0 +1,15 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:31:44 2014
+        MODULE WRITE_FLD_S3D_RS__genmod
+          INTERFACE 
+            SUBROUTINE WRITE_FLD_S3D_RS(PREF,SUFF,OVL,NNZ,FIELD,MYITER, &
+     &MYTHID)
+              INTEGER(KIND=4) :: NNZ
+              INTEGER(KIND=4) :: OVL
+              CHARACTER(*) :: PREF
+              CHARACTER(*) :: SUFF
+              REAL(KIND=8) :: FIELD(1-OVL:50+OVL,1-OVL:50+OVL,NNZ,1,1)
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE WRITE_FLD_S3D_RS
+          END INTERFACE 
+        END MODULE WRITE_FLD_S3D_RS__genmod

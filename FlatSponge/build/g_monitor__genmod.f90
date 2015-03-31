@@ -1,0 +1,10 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:31:35 2014
+        MODULE G_MONITOR__genmod
+          INTERFACE 
+            SUBROUTINE G_MONITOR(MYTIME,MYITER,MYTHID)
+              REAL(KIND=8) :: MYTIME
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE G_MONITOR
+          END INTERFACE 
+        END MODULE G_MONITOR__genmod

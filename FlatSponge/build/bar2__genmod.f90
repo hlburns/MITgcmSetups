@@ -1,0 +1,8 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:31:52 2014
+        MODULE BAR2__genmod
+          INTERFACE 
+            SUBROUTINE BAR2(MYTHID)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE BAR2
+          END INTERFACE 
+        END MODULE BAR2__genmod

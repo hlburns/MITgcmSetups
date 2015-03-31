@@ -1,0 +1,17 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Oct  3 17:32:53 2014
+        MODULE CONVECTIVE_WEIGHTS__genmod
+          INTERFACE 
+            SUBROUTINE CONVECTIVE_WEIGHTS(BI,BJ,K,RHOKM1,RHOK,WEIGHTA,  &
+     &WEIGHTB,CONVECTCOUNT,MYTHID)
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: K
+              REAL(KIND=8) :: RHOKM1(-3:54,-3:54)
+              REAL(KIND=8) :: RHOK(-3:54,-3:54)
+              REAL(KIND=8) :: WEIGHTA(-3:54,-3:54)
+              REAL(KIND=8) :: WEIGHTB(-3:54,-3:54)
+              REAL(KIND=8) :: CONVECTCOUNT(-3:54,-3:54,30)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE CONVECTIVE_WEIGHTS
+          END INTERFACE 
+        END MODULE CONVECTIVE_WEIGHTS__genmod
