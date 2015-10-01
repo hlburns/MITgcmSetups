@@ -1,1 +1,0 @@
-/home/hb1g13/MITgcm/MITgcm/pkg/diagnostics/diagstats_others_calc.F

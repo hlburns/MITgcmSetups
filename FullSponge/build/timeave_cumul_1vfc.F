@@ -1,1 +1,0 @@
-/home/hb1g13/MITgcm/MITgcm/pkg/timeave/timeave_cumul_1vfc.F

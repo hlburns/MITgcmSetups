@@ -11,7 +11,7 @@ C        FineGridFact :: how many fine-grid cells per dF cell
 C        FineGridMax  :: the number of points in the finer vertical grid
 C                         used for interpolation
       INTEGER    Nlayers, FineGridFact, FineGridMax, layers_maxNum
-      PARAMETER( Nlayers = 42 )
+      PARAMETER( Nlayers = 82 )
       PARAMETER( FineGridFact = 10 )
       PARAMETER( FineGridMax = Nr * FineGridFact )
       PARAMETER( layers_maxNum = 1 )

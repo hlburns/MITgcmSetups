@@ -1,0 +1,29 @@
+__An idiots guide to being lazy in job submission__
+
+2 methods:
+1) Dependencies:
+
+sbatch --dependency=afterok:<JOBID> Job_Script
+
+Using jobscripts like:
+/home/hb1g13/J0
+which run scripts like:
+/home/hb1g13/next2
+
+2) Bash script
+If there's no time constraint it keeps the job queue much tidier to automatically submit the next job every 24 hours or so:
+/home/hb1g13/autojob
+
+Auto generating files:
+This scripts require folders of the next data and tidy files to exist:
+I auto generate these using:
+/home/hb1g13/bin/autonext20.sh
+/home/hb1g13/bin/autodata20.sh
+/home/hb1g13/bin/autotidy.sh
+/home/hb1g13/bin/auto_change #Python script find and replace 
+                             --> future put sed in .sh files
+
+If after I generate the files I find I've fucked up a line in everyfile 
+I use the sed command:
+
+sed -i 's/orignal_string/replacement_string/g' file

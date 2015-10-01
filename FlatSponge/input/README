@@ -1,19 +1,26 @@
 MITgcm Nchannel Flat Run
-(See Burns & Drijfhout 2015 - In prep for detailed explaination)
+(See Burns et al. 2015 - In prep for detailed explanation)
 
-Similar set up to Abertnathy 2011
+Similar set up to Abernathey 2011
 
 Input fields are generated here:
-http://nbviewer.ipython.org/github/hlburns/Notebooks/blob/master/Gendata_notebooks/Gendata_Nchannel.ipynb
+http://nbviewer.ipython.org/github/hlburns/Notebooks/Gendata_notebooks/Gendata_Nchannel.ipynb
 (Gendata_Nchannel.py)
 
-Setup in GitHub repo here:
-https://github.com/hlburns/MITgcmSetups/blob/master/FlatSponge/input/Gendata_Nchannel.py
+Setup in Github repo here:
+https://github.com/hlburns/MITgcmSetups/FlatSponge
 
-Autogen of files:
-data: cd data_files edit data.0 accordingly. Run autodata20.sh 
-mtidy: cd tidy_files edit mtidy.0 to 20 year intervals. Run autotidy.sh
-Auto sumission: edit next.0 to either include sbatch or not if running via dependencies. Run autonext.sh, run autojob to for bash to submit jobs every 16 hours.
-Eddy fields: data_efiles, tidy_efiles, next_eddies. symbolic link to data.diagnostics_eddies and the run autoeddy ... etc to gen fines. Run autoeddy.sh to sumbit every 5 hours for 75 years
+Annotated data files.
+
+This setup was ran in 9 different simulations varying data.rbcs relaxation timescale
+
+This setup can be used as a basis for flat bottom channel models
+
+Requires 300+ years to Spin up, (~2 weeks on 128 cores).
+
+Suggestion, once happy with set up suppress diagnostics output and turn off layers package 
+to give 25% + reduction on run time.
+
+Email H.Burns@noc.soton.ac.uk for further information
 
 

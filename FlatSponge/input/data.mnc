@@ -1,6 +1,9 @@
 # Example "data.mnc" file
 # Lines beginning "#" are comments
  &MNC_01
+ # This packages need to be on to enable diagnostics package output
+ # All output except grid.nc is disabled here
+ # Pickup files written to binary
  monitor_mnc=.TRUE.,
  writegrid_mnc=.TRUE.,
  pickup_read_mnc=.FALSE.,

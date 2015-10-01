@@ -1,1 +1,0 @@
-/home/hb1g13/MITgcm/MITgcm/model/src/ini_cg2d.F

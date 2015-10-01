@@ -1,9 +1,0 @@
-        !COMPILER-GENERATED INTERFACE MODULE: Thu Oct 16 16:33:32 2014
-        MODULE DATE__genmod
-          INTERFACE 
-            SUBROUTINE DATE(STRING,MYTHREADID)
-              CHARACTER(*) :: STRING
-              INTEGER(KIND=4) :: MYTHREADID
-            END SUBROUTINE DATE
-          END INTERFACE 
-        END MODULE DATE__genmod

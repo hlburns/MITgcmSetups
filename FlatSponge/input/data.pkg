@@ -1,12 +1,9 @@
 #============================================== 
-#| Ryan's Auto-Generated MITgcm data.pkg file | 
+#|        List of runtime packages            | 
 #============================================== 
  &PACKAGES
   useMNC=.TRUE.,
   usediagnostics=.TRUE.,
-  useGMREDI=.FALSE.,
   useRBCS=.TRUE.,
   useLayers=.TRUE.,
-#  usePTRACERS=.TRUE.,
-#  useKPP=.FALSE.,
  &

@@ -1,1 +1,0 @@
-/home/hb1g13/MITgcm/MITgcm/pkg/generic_advdiff/gad_os7mp_adv_x.F

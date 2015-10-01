@@ -3,14 +3,18 @@ MITgcmSetups
 
 Setups of experiments code, namelist and gendata files
 
-These files are most like uncommented or commented badly as they're just dumps
-of each set up I've Ran.
+To build requires knowledge of MITgcm
 
-FlatSponge: A Flat bottom channel with a very similar setup to 
-            Abernathey et al 2011
-           - Main changes: No net Q loss
-                           KPP off Convetion + Convective Adjustment on
-                           Adv Scheme 7 instead of 81
-                           Variable Relaxation time scales
+genmake2 --mpi --mods=../code ../optfile=../linux_opt_file && make depend && make
 
-Analysis scripts are currently found in the Scripts repository.
+
+FlatSponge: (Set up as in Burns et al. (In prep))
+            build, and code dir for generating MITgcm excutable
+            inputdir (data files (annotated) and forcing fields from Gendata.py)
+            analysis dir. (all modules and scripts to run analysis, requires knowledge 
+                           of Python, not annotated with others in mind, README file explains 
+                           file setup) 
+
+Full: In Progress
+
+Full-experimental-verical layers: In Progress

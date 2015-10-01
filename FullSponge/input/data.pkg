@@ -4,9 +4,7 @@
  &PACKAGES
   useMNC=.TRUE.,
   usediagnostics=.TRUE.,
-  useGMREDI=.FALSE.,
   useRBCS=.TRUE.,
   useLayers=.TRUE.,
-#  usePTRACERS=.TRUE.,
-#  useKPP=.FALSE.,
+  useGGL90=.TRUE.,
  &
