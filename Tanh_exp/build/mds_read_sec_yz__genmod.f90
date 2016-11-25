@@ -1,0 +1,17 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:44:41 2016
+        MODULE MDS_READ_SEC_YZ__genmod
+          INTERFACE 
+            SUBROUTINE MDS_READ_SEC_YZ(FNAME,FILEPREC,USECURRENTDIR,    &
+     &ARRTYPE,KSIZE,FLDRL,FLDRS,IRECORD,MYTHID)
+              CHARACTER(*) :: FNAME
+              INTEGER(KIND=4) :: FILEPREC
+              LOGICAL(KIND=4) :: USECURRENTDIR
+              CHARACTER(LEN=2) :: ARRTYPE
+              INTEGER(KIND=4) :: KSIZE
+              REAL(KIND=8) :: FLDRL(*)
+              REAL(KIND=8) :: FLDRS(*)
+              INTEGER(KIND=4) :: IRECORD
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MDS_READ_SEC_YZ
+          END INTERFACE 
+        END MODULE MDS_READ_SEC_YZ__genmod

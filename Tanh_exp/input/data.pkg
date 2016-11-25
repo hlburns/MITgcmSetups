@@ -1,0 +1,10 @@
+#============================================== 
+#| Ryan's Auto-Generated MITgcm data.pkg file | 
+#============================================== 
+ &PACKAGES
+  useMNC=.TRUE.,
+  usediagnostics=.TRUE.,
+  useRBCS=.TRUE.,
+  useLayers=.TRUE.,
+  useGGL90=.TRUE.,
+ &

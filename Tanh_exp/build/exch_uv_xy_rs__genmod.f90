@@ -1,0 +1,11 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:46:04 2016
+        MODULE EXCH_UV_XY_RS__genmod
+          INTERFACE 
+            SUBROUTINE EXCH_UV_XY_RS(UPHI,VPHI,WITHSIGNS,MYTHID)
+              REAL(KIND=8) :: UPHI(-3:54,-3:54,1,1)
+              REAL(KIND=8) :: VPHI(-3:54,-3:54,1,1)
+              LOGICAL(KIND=4) :: WITHSIGNS
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE EXCH_UV_XY_RS
+          END INTERFACE 
+        END MODULE EXCH_UV_XY_RS__genmod

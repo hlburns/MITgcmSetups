@@ -1,0 +1,16 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:43:52 2016
+        MODULE WRITE_FULLARRAY_RL__genmod
+          INTERFACE 
+            SUBROUTINE WRITE_FULLARRAY_RL(FNAM,FLD,KSIZE,BIARG,BJARG,   &
+     &IREC,MYITER,MYTHID)
+              INTEGER(KIND=4) :: KSIZE
+              CHARACTER(*) :: FNAM
+              REAL(KIND=8) :: FLD(-3:54,-3:54,KSIZE,1,1)
+              INTEGER(KIND=4) :: BIARG
+              INTEGER(KIND=4) :: BJARG
+              INTEGER(KIND=4) :: IREC
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE WRITE_FULLARRAY_RL
+          END INTERFACE 
+        END MODULE WRITE_FULLARRAY_RL__genmod

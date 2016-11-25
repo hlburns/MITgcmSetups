@@ -1,11 +1,11 @@
 # Multithreaded + multi-processing makefile for:
-#    Linux mobilis1 2.6.32-431.5.1.el6.x86_64 #1 SMP Wed Feb 12 00:41:43 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+#    Linux mobilis2 2.6.32-431.5.1.el6.x86_64 #1 SMP Wed Feb 12 00:41:43 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
 # This makefile was generated automatically on
-#    Fri Oct  3 17:28:44 BST 2014
+#    Tue Nov 17 11:56:44 GMT 2015
 # by the command:
 #    /home/hb1g13/MITgcm/MITgcm/tools/genmake2 --mpi --mods=../code --optfile=../linux_mobilis_opt_avx
 # executed by:
-#    hb1g13@mobilis1:/home/hb1g13/MITgcmSetups/FlatSponge/build
+#    hb1g13@mobilis2:/home/hb1g13/MITgcmSetups/FlatSponge/build
 #
 # OPTFILE="../linux_mobilis_opt_avx"
 #
@@ -90,7 +90,6 @@ MAKEFILE = Makefile
 MAKE = make
 
 F77_SRC_FILES =  \
- diagnostics_fill_state.F \
  cd_code_init_fixed.F \
  cd_code_ini_vars.F \
  cd_code_read_pickup.F \
@@ -118,6 +117,7 @@ F77_SRC_FILES =  \
  diagnostics_fill.F \
  diagnostics_fill_field.F \
  diagnostics_fill_rs.F \
+ diagnostics_fill_state.F \
  diagnostics_fract_fill.F \
  diagnostics_init_early.F \
  diagnostics_init_fixed.F \
@@ -736,7 +736,6 @@ F77_SRC_FILES =  \
  write_pickup.F \
  write_state.F
 NON_AD_F77_SRC_FILES =  \
- diagnostics_fill_state.F \
  cd_code_init_fixed.F \
  cd_code_write_pickup.F \
  chksum_tiled.F \
@@ -761,6 +760,7 @@ NON_AD_F77_SRC_FILES =  \
  diagnostics_fill.F \
  diagnostics_fill_field.F \
  diagnostics_fill_rs.F \
+ diagnostics_fill_state.F \
  diagnostics_fract_fill.F \
  diagnostics_init_early.F \
  diagnostics_init_fixed.F \
@@ -1368,8 +1368,8 @@ BUILD_INFO.h:
 	@echo Creating $@ ...
 	-echo "#define THISVER 'checkpoint64o'" > $@
 	-echo "#define THISUSER 'hb1g13'" >> $@
-	-echo "#define THISDATE 'Fri Oct  3 17:28:44 BST 2014'" >> $@
-	-echo "#define THISHOST 'mobilis1'" >> $@
+	-echo "#define THISDATE 'Tue Nov 17 11:56:44 GMT 2015'" >> $@
+	-echo "#define THISHOST 'mobilis2'" >> $@
 
 # The normal chain of rules is (  .F - .f - .o  )
 
@@ -1794,7 +1794,7 @@ svd_touch:
 
 
 #  These files are linked from ../code
- CPP_OPTIONS.h diagnostics_fill_state.F DIAGNOSTICS_SIZE.h GAD_OPTIONS.h LAYERS_OPTIONS.h LAYERS_SIZE.h SIZE.h :
+ CPP_OPTIONS.h DIAGNOSTICS_SIZE.h GAD_OPTIONS.h LAYERS_OPTIONS.h LAYERS_SIZE.h SIZE.h :
 	if [ ! -L $@ ]; then $(LN) ../code/$@ $@; fi
 
 #  These files are linked from /home/hb1g13/MITgcm/MITgcm/pkg/cd_code
@@ -1806,7 +1806,7 @@ svd_touch:
 	if [ ! -L $@ ]; then $(LN) /home/hb1g13/MITgcm/MITgcm/pkg/debug/$@ $@; fi
 
 #  These files are linked from /home/hb1g13/MITgcm/MITgcm/pkg/diagnostics
- diag_calc_psivel.F diag_cg2d.F diagnostics_addtolist.F DIAGNOSTICS_CALC.h diagnostics_calc_phivel.F diagnostics_check.F diagnostics_clear.F diagnostics_fill.F diagnostics_fill_field.F diagnostics_fill_rs.F diagnostics_fract_fill.F DIAGNOSTICS.h diagnostics_init_early.F diagnostics_init_fixed.F diagnostics_init_varia.F diagnostics_interp_p2p.F diagnostics_interp_vert.F diagnostics_is_on.F diagnostics_list_check.F diagnostics_main_init.F diagnostics_mnc_out.F diagnostics_out.F diagnostics_readparms.F diagnostics_read_pickup.F diagnostics_scale_fill.F diagnostics_scale_fill_rs.F diagnostics_set_calc.F diagnostics_setdiag.F diagnostics_set_levels.F diagnostics_set_pointers.F diagnostics_status_error.F diagnostics_sum_levels.F diagnostics_summary.F diagnostics_switch_onoff.F diagnostics_utils.F diagnostics_write.F diagnostics_write_pickup.F DIAG_OPTIONS.h diagstats_ascii_out.F diagstats_calc.F diagstats_clear.F diagstats_close_io.F diagstats_fill.F diagstats_global.F diagstats_ini_io.F diagstats_local.F diagstats_mnc_out.F diagstats_others_calc.F diagstats_output.F DIAGSTATS_REGIONS.h diagstats_setdiag.F diagstats_set_pointers.F diagstats_set_regions.F diag_vegtile_fill.F diagnostics_ad.flow :
+ diag_calc_psivel.F diag_cg2d.F diagnostics_addtolist.F DIAGNOSTICS_CALC.h diagnostics_calc_phivel.F diagnostics_check.F diagnostics_clear.F diagnostics_fill.F diagnostics_fill_field.F diagnostics_fill_rs.F diagnostics_fill_state.F diagnostics_fract_fill.F DIAGNOSTICS.h diagnostics_init_early.F diagnostics_init_fixed.F diagnostics_init_varia.F diagnostics_interp_p2p.F diagnostics_interp_vert.F diagnostics_is_on.F diagnostics_list_check.F diagnostics_main_init.F diagnostics_mnc_out.F diagnostics_out.F diagnostics_readparms.F diagnostics_read_pickup.F diagnostics_scale_fill.F diagnostics_scale_fill_rs.F diagnostics_set_calc.F diagnostics_setdiag.F diagnostics_set_levels.F diagnostics_set_pointers.F diagnostics_status_error.F diagnostics_sum_levels.F diagnostics_summary.F diagnostics_switch_onoff.F diagnostics_utils.F diagnostics_write.F diagnostics_write_pickup.F DIAG_OPTIONS.h diagstats_ascii_out.F diagstats_calc.F diagstats_clear.F diagstats_close_io.F diagstats_fill.F diagstats_global.F diagstats_ini_io.F diagstats_local.F diagstats_mnc_out.F diagstats_others_calc.F diagstats_output.F DIAGSTATS_REGIONS.h diagstats_setdiag.F diagstats_set_pointers.F diagstats_set_regions.F diag_vegtile_fill.F diagnostics_ad.flow :
 	if [ ! -L $@ ]; then $(LN) /home/hb1g13/MITgcm/MITgcm/pkg/diagnostics/$@ $@; fi
 
 #  These files are linked from /home/hb1g13/MITgcm/MITgcm/pkg/flt
@@ -2316,11 +2316,11 @@ diagnostics_fill_state.f: CPP_EEMACROS.h CPP_EEOPTIONS.h CPP_OPTIONS.h
 diagnostics_fill_state.f: DIAG_OPTIONS.h DXC_MACROS.h DXF_MACROS.h
 diagnostics_fill_state.f: DXG_MACROS.h DXV_MACROS.h DYC_MACROS.h DYF_MACROS.h
 diagnostics_fill_state.f: DYG_MACROS.h DYNVARS.h DYU_MACROS.h EEPARAMS.h
-diagnostics_fill_state.f: FCORI_MACROS.h GRID.h GRID_MACROS.h HFACC_MACROS.h
-diagnostics_fill_state.f: HFACS_MACROS.h HFACW_MACROS.h MASKS_MACROS.h
-diagnostics_fill_state.f: MASKW_MACROS.h NH_VARS.h PACKAGES_CONFIG.h PARAMS.h
-diagnostics_fill_state.f: RA_MACROS.h RAS_MACROS.h RAW_MACROS.h
-diagnostics_fill_state.f: RECIP_DXC_MACROS.h RECIP_DXF_MACROS.h
+diagnostics_fill_state.f: FCORI_MACROS.h GAD.h GRID.h GRID_MACROS.h
+diagnostics_fill_state.f: HFACC_MACROS.h HFACS_MACROS.h HFACW_MACROS.h
+diagnostics_fill_state.f: MASKS_MACROS.h MASKW_MACROS.h NH_VARS.h
+diagnostics_fill_state.f: PACKAGES_CONFIG.h PARAMS.h RA_MACROS.h RAS_MACROS.h
+diagnostics_fill_state.f: RAW_MACROS.h RECIP_DXC_MACROS.h RECIP_DXF_MACROS.h
 diagnostics_fill_state.f: RECIP_DXG_MACROS.h RECIP_DXV_MACROS.h
 diagnostics_fill_state.f: RECIP_DYC_MACROS.h RECIP_DYF_MACROS.h
 diagnostics_fill_state.f: RECIP_DYG_MACROS.h RECIP_DYU_MACROS.h

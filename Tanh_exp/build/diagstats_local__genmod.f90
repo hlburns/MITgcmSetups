@@ -1,0 +1,37 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:44:09 2016
+        MODULE DIAGSTATS_LOCAL__genmod
+          INTERFACE 
+            SUBROUTINE DIAGSTATS_LOCAL(STATFLD,INPFLD,FRCFLD,SCALEFACT, &
+     &POWER,USEFRACT,SIZF,SIZI1,SIZI2,SIZJ1,SIZJ2,SIZK,SIZTX,SIZTY,IRUN,&
+     &JRUN,KIN,BIIN,BJIN,K,BI,BJ,REGION2FILL,NDID,PARSFLD,MYTHID)
+              INTEGER(KIND=4) :: SIZTY
+              INTEGER(KIND=4) :: SIZTX
+              INTEGER(KIND=4) :: SIZK
+              INTEGER(KIND=4) :: SIZJ2
+              INTEGER(KIND=4) :: SIZJ1
+              INTEGER(KIND=4) :: SIZI2
+              INTEGER(KIND=4) :: SIZI1
+              INTEGER(KIND=4) :: SIZF
+              REAL(KIND=8) :: STATFLD(0:4,0:0)
+              REAL(KIND=8) :: INPFLD(SIZI1:SIZI2,SIZJ1:SIZJ2,SIZK,SIZTX,&
+     &SIZTY)
+              REAL(KIND=8) :: FRCFLD(SIZI1:SIZI2,SIZJ1:SIZJ2,SIZF,SIZTX,&
+     &SIZTY)
+              REAL(KIND=8) :: SCALEFACT
+              INTEGER(KIND=4) :: POWER
+              LOGICAL(KIND=4) :: USEFRACT
+              INTEGER(KIND=4) :: IRUN
+              INTEGER(KIND=4) :: JRUN
+              INTEGER(KIND=4) :: KIN
+              INTEGER(KIND=4) :: BIIN
+              INTEGER(KIND=4) :: BJIN
+              INTEGER(KIND=4) :: K
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: REGION2FILL(0:0)
+              INTEGER(KIND=4) :: NDID
+              CHARACTER(LEN=16) :: PARSFLD
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE DIAGSTATS_LOCAL
+          END INTERFACE 
+        END MODULE DIAGSTATS_LOCAL__genmod

@@ -1,0 +1,11 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:45:59 2016
+        MODULE EXCH_SM_3D_RS__genmod
+          INTERFACE 
+            SUBROUTINE EXCH_SM_3D_RS(PHI,WITHSIGNS,MYNZ,MYTHID)
+              INTEGER(KIND=4) :: MYNZ
+              REAL(KIND=8) :: PHI(-3:54,-3:54,MYNZ,1,1)
+              LOGICAL(KIND=4) :: WITHSIGNS
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE EXCH_SM_3D_RS
+          END INTERFACE 
+        END MODULE EXCH_SM_3D_RS__genmod

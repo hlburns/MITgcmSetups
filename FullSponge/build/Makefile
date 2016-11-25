@@ -1,9 +1,9 @@
 # Multithreaded + multi-processing makefile for:
 #    Linux mobilis2 2.6.32-431.5.1.el6.x86_64 #1 SMP Wed Feb 12 00:41:43 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
 # This makefile was generated automatically on
-#    Wed Jul 29 11:56:26 BST 2015
+#    Mon Nov 30 15:50:21 GMT 2015
 # by the command:
-#    /home/hb1g13/MITgcm/MITgcm/tools/genmake2 --mpi --mods=../code --optfile=../linux_mobilis_opt_avx
+#    /home/hb1g13/MITgcm/MITgcm/tools/genmake2 --mpi --gsl --mods=../code --optfile=../linux_mobilis_opt_avx
 # executed by:
 #    hb1g13@mobilis2:/home/hb1g13/MITgcmSetups/FullSponge/build
 #
@@ -62,9 +62,9 @@ CC = mpicc
 LINK = mpif90 -shared-intel -no-ipo 
 
 # Defines for CPP
-DEFINES = -DWORDLENGTH=4 -DALLOW_USE_MPI -DHAVE_SYSTEM -DHAVE_FDATE -DHAVE_ETIME -DHAVE_CLOC -DHAVE_SETRLSTK -DHAVE_SIGREG -DHAVE_STAT -DHAVE_NETCDF -DHAVE_FLUSH 
+DEFINES = -DWORDLENGTH=4 -DALLOW_USE_MPI -DUSE_GSL_IEEE -DHAVE_SYSTEM -DHAVE_FDATE -DHAVE_ETIME -DHAVE_CLOC -DHAVE_SETRLSTK -DHAVE_SIGREG -DHAVE_STAT -DHAVE_NETCDF -DHAVE_FLUSH 
 # Includes for CPP
-INCLUDES = -I/cm/shared/apps/openmpi/intel/64/1.6.5/include -I/home/jeff/packages/netcdf4/netcdf-fortran-4.2/mobilis/intel14.0//include
+INCLUDES = -I/cm/shared/apps/openmpi/intel/64/1.6.5/include -I/home/hb1g13/gsl/include/gsl -I/home/jeff/packages/netcdf4/netcdf-fortran-4.2/mobilis/intel14.0//include 
 # default CPP includes for makedepend
 CPPINCLUDES =  -I/cm/shared/apps/intel/composer_xe/2013_sp1.2.144/compiler/include/intel64 -I/cm/shared/apps/intel/composer_xe/2013_sp1.2.144/compiler/include -I/usr/local/include -I/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include -I/usr/include
 # Flags for KPP
@@ -83,13 +83,16 @@ CFLAGS = -O2 -ip -fPIC
 NOOPTFILES = 
 NOOPTFLAGS = -O0 -g -m64 -fPIC
 # Flags and libraries needed for linking
-LIBS = -L/home/jeff/packages/netcdf4/netcdf-fortran-4.2/mobilis/intel14.0//lib -lnetcdff -L/cm/shared/apps/netcdf/intel/64/4.3.0/lib -lnetcdf -L/cm/shared/apps/hdf5_18/1.8.11//lib -lhdf5_hl -lhdf5hl_fortran -lhdf5 -lhdf5_fortran -lz -lm
+LIBS = -L/home/jeff/packages/netcdf4/netcdf-fortran-4.2/mobilis/intel14.0//lib -lnetcdff -L/cm/shared/apps/netcdf/intel/64/4.3.0/lib -lnetcdf -L/cm/shared/apps/hdf5_18/1.8.11//lib -lhdf5_hl -lhdf5hl_fortran -lhdf5 -lhdf5_fortran -lz -lm 
 # Name of the makefile
 MAKEFILE = Makefile
 # Name of the make program
 MAKE = make
 
 F77_SRC_FILES =  \
+ gad_os7mp_adv_r.F \
+ gad_os7mp_adv_x.F \
+ gad_os7mp_adv_y.F \
  chksum_tiled.F \
  debug_call.F \
  debug_cs_corner_uv.F \
@@ -194,9 +197,6 @@ F77_SRC_FILES =  \
  gad_implicit_r.F \
  gad_init_fixed.F \
  gad_init_varia.F \
- gad_os7mp_adv_r.F \
- gad_os7mp_adv_x.F \
- gad_os7mp_adv_y.F \
  gad_read_pickup.F \
  gad_som_advect.F \
  gad_som_adv_r.F \
@@ -1300,7 +1300,7 @@ CLEAN:
 	-rm -f oad_cp.[0-9][0-9][0-9].?????
 
 makefile:
-	$(TOOLSDIR)/genmake2  "--mpi" "--mods=../code" "--optfile=../linux_mobilis_opt_avx"
+	$(TOOLSDIR)/genmake2  "--mpi" "--gsl" "--mods=../code" "--optfile=../linux_mobilis_opt_avx"
 cleanlinks:
 	-find . -type l -exec rm {} \;
 
@@ -1319,7 +1319,7 @@ BUILD_INFO.h:
 	@echo Creating $@ ...
 	-echo "#define THISVER 'checkpoint64o'" > $@
 	-echo "#define THISUSER 'hb1g13'" >> $@
-	-echo "#define THISDATE 'Wed Jul 29 11:56:26 BST 2015'" >> $@
+	-echo "#define THISDATE 'Mon Nov 30 15:50:21 GMT 2015'" >> $@
 	-echo "#define THISHOST 'mobilis2'" >> $@
 
 # The normal chain of rules is (  .F - .f - .o  )
@@ -1734,7 +1734,7 @@ svd_touch:
 
 
 #  These files are linked from ../code
- CPP_OPTIONS.h DIAGNOSTICS_SIZE.h GAD_OPTIONS.h GGL90_OPTIONS.h LAYERS_OPTIONS.h LAYERS_SIZE.h SIZE.h :
+ CPP_OPTIONS.h DIAGNOSTICS_SIZE.h GAD_OPTIONS.h gad_os7mp_adv_r.F gad_os7mp_adv_x.F gad_os7mp_adv_y.F GGL90_OPTIONS.h LAYERS_OPTIONS.h LAYERS_SIZE.h SIZE.h :
 	if [ ! -L $@ ]; then $(LN) ../code/$@ $@; fi
 
 #  These files are linked from /home/hb1g13/MITgcm/MITgcm/pkg/debug
@@ -1746,7 +1746,7 @@ svd_touch:
 	if [ ! -L $@ ]; then $(LN) /home/hb1g13/MITgcm/MITgcm/pkg/diagnostics/$@ $@; fi
 
 #  These files are linked from /home/hb1g13/MITgcm/MITgcm/pkg/generic_advdiff
- gad_ad_check_lev1_dir.h gad_ad_check_lev2_dir.h gad_ad_check_lev3_dir.h gad_ad_check_lev4_dir.h gad_advection.F gad_biharm_r.F gad_biharm_x.F gad_biharm_y.F gad_c2_adv_r.F gad_c2_adv_x.F gad_c2_adv_y.F gad_c2_impl_r.F gad_c4_adv_r.F gad_c4_adv_x.F gad_c4_adv_y.F gad_calc_rhs.F gad_check.F gad_del2.F gad_diagnostics_init.F gad_diagnostics_state.F gad_diff_r.F gad_diff_x.F gad_diff_y.F gad_dst2u1_adv_r.F gad_dst2u1_adv_x.F gad_dst2u1_adv_y.F gad_dst2u1_impl_r.F gad_dst3_adv_r.F gad_dst3_adv_x.F gad_dst3_adv_y.F gad_dst3fl_adv_r.F gad_dst3fl_adv_x.F gad_dst3fl_adv_y.F gad_dst3fl_impl_r.F gad_exch_som.F gad_fluxlimit_adv_r.F gad_fluxlimit_adv_x.F gad_fluxlimit_adv_y.F GAD_FLUX_LIMITER.h gad_fluxlimit_impl_r.F gad_grad_x.F gad_grad_y.F GAD.h gad_implicit_r.F gad_init_fixed.F gad_init_varia.F gad_os7mp_adv_r.F gad_os7mp_adv_x.F gad_os7mp_adv_y.F gad_read_pickup.F gad_som_advect.F gad_som_adv_r.F gad_som_adv_x.F gad_som_adv_y.F gad_som_exchanges.F gad_som_fill_cs_corner.F gad_som_lim_r.F gad_som_prep_cs_corner.F GAD_SOM_VARS.h gad_u3_adv_r.F gad_u3_adv_x.F gad_u3_adv_y.F gad_u3c4_impl_r.F gad_valid_advscheme.F gad_write_pickup.F salt_fill.F :
+ gad_ad_check_lev1_dir.h gad_ad_check_lev2_dir.h gad_ad_check_lev3_dir.h gad_ad_check_lev4_dir.h gad_advection.F gad_biharm_r.F gad_biharm_x.F gad_biharm_y.F gad_c2_adv_r.F gad_c2_adv_x.F gad_c2_adv_y.F gad_c2_impl_r.F gad_c4_adv_r.F gad_c4_adv_x.F gad_c4_adv_y.F gad_calc_rhs.F gad_check.F gad_del2.F gad_diagnostics_init.F gad_diagnostics_state.F gad_diff_r.F gad_diff_x.F gad_diff_y.F gad_dst2u1_adv_r.F gad_dst2u1_adv_x.F gad_dst2u1_adv_y.F gad_dst2u1_impl_r.F gad_dst3_adv_r.F gad_dst3_adv_x.F gad_dst3_adv_y.F gad_dst3fl_adv_r.F gad_dst3fl_adv_x.F gad_dst3fl_adv_y.F gad_dst3fl_impl_r.F gad_exch_som.F gad_fluxlimit_adv_r.F gad_fluxlimit_adv_x.F gad_fluxlimit_adv_y.F GAD_FLUX_LIMITER.h gad_fluxlimit_impl_r.F gad_grad_x.F gad_grad_y.F GAD.h gad_implicit_r.F gad_init_fixed.F gad_init_varia.F gad_read_pickup.F gad_som_advect.F gad_som_adv_r.F gad_som_adv_x.F gad_som_adv_y.F gad_som_exchanges.F gad_som_fill_cs_corner.F gad_som_lim_r.F gad_som_prep_cs_corner.F GAD_SOM_VARS.h gad_u3_adv_r.F gad_u3_adv_x.F gad_u3_adv_y.F gad_u3c4_impl_r.F gad_valid_advscheme.F gad_write_pickup.F salt_fill.F :
 	if [ ! -L $@ ]; then $(LN) /home/hb1g13/MITgcm/MITgcm/pkg/generic_advdiff/$@ $@; fi
 
 #  These files are linked from /home/hb1g13/MITgcm/MITgcm/pkg/ggl90

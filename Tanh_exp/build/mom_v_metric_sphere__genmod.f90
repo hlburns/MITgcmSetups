@@ -1,0 +1,14 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:45:10 2016
+        MODULE MOM_V_METRIC_SPHERE__genmod
+          INTERFACE 
+            SUBROUTINE MOM_V_METRIC_SPHERE(BI,BJ,K,UFLD,VMETRICTERMS,   &
+     &MYTHID)
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: K
+              REAL(KIND=8) :: UFLD(-3:54,-3:54)
+              REAL(KIND=8) :: VMETRICTERMS(-3:54,-3:54)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MOM_V_METRIC_SPHERE
+          END INTERFACE 
+        END MODULE MOM_V_METRIC_SPHERE__genmod

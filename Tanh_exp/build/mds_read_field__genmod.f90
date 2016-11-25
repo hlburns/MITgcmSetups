@@ -1,0 +1,19 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:44:40 2016
+        MODULE MDS_READ_FIELD__genmod
+          INTERFACE 
+            SUBROUTINE MDS_READ_FIELD(FNAME,FILEPREC,USECURRENTDIR,     &
+     &ARRTYPE,KSIZE,KLO,KHI,FLDRL,FLDRS,IRECORD,MYTHID)
+              CHARACTER(*) :: FNAME
+              INTEGER(KIND=4) :: FILEPREC
+              LOGICAL(KIND=4) :: USECURRENTDIR
+              CHARACTER(LEN=2) :: ARRTYPE
+              INTEGER(KIND=4) :: KSIZE
+              INTEGER(KIND=4) :: KLO
+              INTEGER(KIND=4) :: KHI
+              REAL(KIND=8) :: FLDRL(*)
+              REAL(KIND=8) :: FLDRS(*)
+              INTEGER(KIND=4) :: IRECORD
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MDS_READ_FIELD
+          END INTERFACE 
+        END MODULE MDS_READ_FIELD__genmod

@@ -1,0 +1,11 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:46:16 2016
+        MODULE MDS_RECLEN__genmod
+          INTERFACE 
+            FUNCTION MDS_RECLEN(FILEPREC,NNN,MYTHID)
+              INTEGER(KIND=4) :: FILEPREC
+              INTEGER(KIND=4) :: NNN
+              INTEGER(KIND=4) :: MYTHID
+              INTEGER(KIND=4) :: MDS_RECLEN
+            END FUNCTION MDS_RECLEN
+          END INTERFACE 
+        END MODULE MDS_RECLEN__genmod

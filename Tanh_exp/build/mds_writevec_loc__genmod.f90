@@ -1,0 +1,20 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:44:45 2016
+        MODULE MDS_WRITEVEC_LOC__genmod
+          INTERFACE 
+            SUBROUTINE MDS_WRITEVEC_LOC(FNAME,FILEPREC,IOUNIT,ARRTYPE,  &
+     &NSIZE,FLDRL,FLDRS,BI,BJ,IRECORD,MYITER,MYTHID)
+              CHARACTER(*) :: FNAME
+              INTEGER(KIND=4) :: FILEPREC
+              INTEGER(KIND=4) :: IOUNIT
+              CHARACTER(LEN=2) :: ARRTYPE
+              INTEGER(KIND=4) :: NSIZE
+              REAL(KIND=8) :: FLDRL(*)
+              REAL(KIND=8) :: FLDRS(*)
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: IRECORD
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MDS_WRITEVEC_LOC
+          END INTERFACE 
+        END MODULE MDS_WRITEVEC_LOC__genmod

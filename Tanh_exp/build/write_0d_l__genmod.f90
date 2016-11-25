@@ -1,0 +1,11 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:46:21 2016
+        MODULE WRITE_0D_L__genmod
+          INTERFACE 
+            SUBROUTINE WRITE_0D_L(FLD,INDEX_TYPE,HEAD,COMMENT)
+              LOGICAL(KIND=4) :: FLD
+              INTEGER(KIND=4) :: INDEX_TYPE
+              CHARACTER(*) :: HEAD
+              CHARACTER(*) :: COMMENT
+            END SUBROUTINE WRITE_0D_L
+          END INTERFACE 
+        END MODULE WRITE_0D_L__genmod

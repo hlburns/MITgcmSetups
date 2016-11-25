@@ -1,0 +1,13 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:44:54 2016
+        MODULE MNC_FILE_ADD_ATTR_DBL__genmod
+          INTERFACE 
+            SUBROUTINE MNC_FILE_ADD_ATTR_DBL(FNAME,ATNAME,LEN,DVAL,     &
+     &MYTHID)
+              CHARACTER(*) :: FNAME
+              CHARACTER(*) :: ATNAME
+              INTEGER(KIND=4) :: LEN
+              REAL(KIND=8) :: DVAL
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MNC_FILE_ADD_ATTR_DBL
+          END INTERFACE 
+        END MODULE MNC_FILE_ADD_ATTR_DBL__genmod

@@ -1,0 +1,8 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:46:42 2016
+        MODULE INI_CG3D__genmod
+          INTERFACE 
+            SUBROUTINE INI_CG3D(MYTHID)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE INI_CG3D
+          END INTERFACE 
+        END MODULE INI_CG3D__genmod

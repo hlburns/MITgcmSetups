@@ -1,0 +1,15 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:46:26 2016
+        MODULE CALC_OCE_MXLAYER__genmod
+          INTERFACE 
+            SUBROUTINE CALC_OCE_MXLAYER(RHOSURF,SIGMAR,BI,BJ,MYTIME,    &
+     &MYITER,MYTHID)
+              REAL(KIND=8) :: RHOSURF(-3:54,-3:54)
+              REAL(KIND=8) :: SIGMAR(-3:54,-3:54,60)
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              REAL(KIND=8) :: MYTIME
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE CALC_OCE_MXLAYER
+          END INTERFACE 
+        END MODULE CALC_OCE_MXLAYER__genmod

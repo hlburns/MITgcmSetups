@@ -1,0 +1,35 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:44:09 2016
+        MODULE DIAGSTATS_LM_CALC__genmod
+          INTERFACE 
+            SUBROUTINE DIAGSTATS_LM_CALC(STATARR,INPARR,FRCARR,SCALEFACT&
+     &,POWER,USEFRACT,REGID,REGMSKVAL,NSTATS,SIZI1,SIZI2,SIZJ1,SIZJ2,   &
+     &IRUN,JRUN,REGMASK,ARRMASK,ARRAREA,SPECIALVAL,EXCLSPVAL,K,BI,BJ,   &
+     &PARSFLD,MYTHID)
+              INTEGER(KIND=4) :: SIZJ2
+              INTEGER(KIND=4) :: SIZJ1
+              INTEGER(KIND=4) :: SIZI2
+              INTEGER(KIND=4) :: SIZI1
+              INTEGER(KIND=4) :: NSTATS
+              REAL(KIND=8) :: STATARR(0:NSTATS)
+              REAL(KIND=8) :: INPARR(SIZI1:SIZI2,SIZJ1:SIZJ2)
+              REAL(KIND=8) :: FRCARR(SIZI1:SIZI2,SIZJ1:SIZJ2)
+              REAL(KIND=8) :: SCALEFACT
+              INTEGER(KIND=4) :: POWER
+              LOGICAL(KIND=4) :: USEFRACT
+              INTEGER(KIND=4) :: REGID
+              REAL(KIND=8) :: REGMSKVAL
+              INTEGER(KIND=4) :: IRUN
+              INTEGER(KIND=4) :: JRUN
+              REAL(KIND=8) :: REGMASK(-3:54,-3:54)
+              REAL(KIND=8) :: ARRMASK(-3:54,-3:54)
+              REAL(KIND=8) :: ARRAREA(-3:54,-3:54)
+              REAL(KIND=8) :: SPECIALVAL
+              LOGICAL(KIND=4) :: EXCLSPVAL
+              INTEGER(KIND=4) :: K
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              CHARACTER(LEN=16) :: PARSFLD
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE DIAGSTATS_LM_CALC
+          END INTERFACE 
+        END MODULE DIAGSTATS_LM_CALC__genmod

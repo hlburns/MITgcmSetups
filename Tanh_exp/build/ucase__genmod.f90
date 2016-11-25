@@ -1,0 +1,8 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:46:21 2016
+        MODULE UCASE__genmod
+          INTERFACE 
+            SUBROUTINE UCASE(STRING)
+              CHARACTER(*) :: STRING
+            END SUBROUTINE UCASE
+          END INTERFACE 
+        END MODULE UCASE__genmod

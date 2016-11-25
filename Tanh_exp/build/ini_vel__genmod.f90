@@ -1,0 +1,8 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:46:54 2016
+        MODULE INI_VEL__genmod
+          INTERFACE 
+            SUBROUTINE INI_VEL(MYTHID)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE INI_VEL
+          END INTERFACE 
+        END MODULE INI_VEL__genmod

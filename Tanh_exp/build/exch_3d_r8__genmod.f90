@@ -1,0 +1,10 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:45:45 2016
+        MODULE EXCH_3D_R8__genmod
+          INTERFACE 
+            SUBROUTINE EXCH_3D_R8(PHI,MYNZ,MYTHID)
+              INTEGER(KIND=4) :: MYNZ
+              REAL(KIND=8) :: PHI(-3:54,-3:54,1:MYNZ,1,1)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE EXCH_3D_R8
+          END INTERFACE 
+        END MODULE EXCH_3D_R8__genmod

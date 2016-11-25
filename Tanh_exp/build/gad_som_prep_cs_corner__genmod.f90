@@ -1,0 +1,26 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Mon Mar 21 14:44:27 2016
+        MODULE GAD_SOM_PREP_CS_CORNER__genmod
+          INTERFACE 
+            SUBROUTINE GAD_SOM_PREP_CS_CORNER(SMVOL,SMTR0,SMTR,SMCORNERS&
+     &,PREP4DIRX,OVERLAPONLY,INTERIORONLY,N_EDGE,S_EDGE,E_EDGE,W_EDGE,  &
+     &IPASS,K,MYNZ,BI,BJ,MYTHID)
+              INTEGER(KIND=4) :: MYNZ
+              REAL(KIND=8) :: SMVOL(-3:54,-3:54,MYNZ)
+              REAL(KIND=8) :: SMTR0(-3:54,-3:54,MYNZ)
+              REAL(KIND=8) :: SMTR(-3:54,-3:54,MYNZ,1,1,9)
+              REAL(KIND=8) :: SMCORNERS(4,4,4,-1:9)
+              LOGICAL(KIND=4) :: PREP4DIRX
+              LOGICAL(KIND=4) :: OVERLAPONLY
+              LOGICAL(KIND=4) :: INTERIORONLY
+              LOGICAL(KIND=4) :: N_EDGE
+              LOGICAL(KIND=4) :: S_EDGE
+              LOGICAL(KIND=4) :: E_EDGE
+              LOGICAL(KIND=4) :: W_EDGE
+              INTEGER(KIND=4) :: IPASS
+              INTEGER(KIND=4) :: K
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE GAD_SOM_PREP_CS_CORNER
+          END INTERFACE 
+        END MODULE GAD_SOM_PREP_CS_CORNER__genmod
