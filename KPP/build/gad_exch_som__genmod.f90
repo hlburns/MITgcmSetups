@@ -1,0 +1,10 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:24:28 2017
+        MODULE GAD_EXCH_SOM__genmod
+          INTERFACE 
+            SUBROUTINE GAD_EXCH_SOM(SMTR,MYNZ,MYTHID)
+              INTEGER(KIND=4) :: MYNZ
+              REAL(KIND=8) :: SMTR(-3:29,-3:29,MYNZ,1,1,9)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE GAD_EXCH_SOM
+          END INTERFACE 
+        END MODULE GAD_EXCH_SOM__genmod

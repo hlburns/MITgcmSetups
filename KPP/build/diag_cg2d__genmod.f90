@@ -1,0 +1,21 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:22:33 2017
+        MODULE DIAG_CG2D__genmod
+          INTERFACE 
+            SUBROUTINE DIAG_CG2D(AW2D,AS2D,B2D,RESIDCRITER,FIRSTRESIDUAL&
+     &,MINRESIDUAL,LASTRESIDUAL,X2D,NUMITERS,NITERMIN,PRINTRESIDFRQ,    &
+     &MYTHID)
+              REAL(KIND=8) :: AW2D(-3:29,-3:29,1,1)
+              REAL(KIND=8) :: AS2D(-3:29,-3:29,1,1)
+              REAL(KIND=8) :: B2D(-3:29,-3:29,1,1)
+              REAL(KIND=8) :: RESIDCRITER
+              REAL(KIND=8) :: FIRSTRESIDUAL
+              REAL(KIND=8) :: MINRESIDUAL
+              REAL(KIND=8) :: LASTRESIDUAL
+              REAL(KIND=8) :: X2D(-3:29,-3:29,1,1)
+              INTEGER(KIND=4) :: NUMITERS
+              INTEGER(KIND=4) :: NITERMIN
+              INTEGER(KIND=4) :: PRINTRESIDFRQ
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE DIAG_CG2D
+          END INTERFACE 
+        END MODULE DIAG_CG2D__genmod

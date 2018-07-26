@@ -1,0 +1,14 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:31:01 2017
+        MODULE WRITE_COPY1D_R4__genmod
+          INTERFACE 
+            SUBROUTINE WRITE_COPY1D_R4(TMPBUFRL,FLD,LFLD,INDEX_TYPE,HEAD&
+     &,COMMENT)
+              INTEGER(KIND=4) :: LFLD
+              REAL(KIND=8) :: TMPBUFRL(LFLD)
+              REAL(KIND=4) :: FLD(LFLD)
+              INTEGER(KIND=4) :: INDEX_TYPE
+              CHARACTER(*) :: HEAD
+              CHARACTER(*) :: COMMENT
+            END SUBROUTINE WRITE_COPY1D_R4
+          END INTERFACE 
+        END MODULE WRITE_COPY1D_R4__genmod

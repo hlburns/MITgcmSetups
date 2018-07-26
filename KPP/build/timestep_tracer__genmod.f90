@@ -1,0 +1,16 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:33:37 2017
+        MODULE TIMESTEP_TRACER__genmod
+          INTERFACE 
+            SUBROUTINE TIMESTEP_TRACER(BI,BJ,K,DELTATLOC,TRACER,GTRACER,&
+     &MYITER,MYTHID)
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: K
+              REAL(KIND=8) :: DELTATLOC
+              REAL(KIND=8) :: TRACER(-3:29,-3:29,30,1,1)
+              REAL(KIND=8) :: GTRACER(-3:29,-3:29,30,1,1)
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE TIMESTEP_TRACER
+          END INTERFACE 
+        END MODULE TIMESTEP_TRACER__genmod

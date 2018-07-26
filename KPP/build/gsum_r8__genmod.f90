@@ -1,0 +1,10 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:30:35 2017
+        MODULE GSUM_R8__genmod
+          INTERFACE 
+            SUBROUTINE GSUM_R8(MYPHI,ANSWER,MYTHID)
+              REAL(KIND=8) :: MYPHI
+              REAL(KIND=8) :: ANSWER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE GSUM_R8
+          END INTERFACE 
+        END MODULE GSUM_R8__genmod

@@ -1,0 +1,12 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:28:01 2017
+        MODULE READ_FLD_XY_RL__genmod
+          INTERFACE 
+            SUBROUTINE READ_FLD_XY_RL(PREF,SUFF,FIELD,MYITER,MYTHID)
+              CHARACTER(*) :: PREF
+              CHARACTER(*) :: SUFF
+              REAL(KIND=8) :: FIELD(-3:29,-3:29,1,1)
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE READ_FLD_XY_RL
+          END INTERFACE 
+        END MODULE READ_FLD_XY_RL__genmod

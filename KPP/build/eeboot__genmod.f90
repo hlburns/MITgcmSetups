@@ -1,0 +1,7 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:28:45 2017
+        MODULE EEBOOT__genmod
+          INTERFACE 
+            SUBROUTINE EEBOOT
+            END SUBROUTINE EEBOOT
+          END INTERFACE 
+        END MODULE EEBOOT__genmod

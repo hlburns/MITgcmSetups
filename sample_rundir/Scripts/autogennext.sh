@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in {1..2..1}
+for i in {1..100..1}
     do 
     # new file number
     fnamenew=$(($i+1))

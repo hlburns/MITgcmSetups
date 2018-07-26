@@ -1,0 +1,17 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:25:14 2017
+        MODULE RI_IWMIX__genmod
+          INTERFACE 
+            SUBROUTINE RI_IWMIX(KMTJ,SHSQ,DBLOC,DBLOCSM,DIFFUSKZS,      &
+     &DIFFUSKZT,IKPPKEY,DIFFUS,MYTHID)
+              INTEGER(KIND=4) :: KMTJ(1089)
+              REAL(KIND=8) :: SHSQ(1089,30)
+              REAL(KIND=8) :: DBLOC(1089,30)
+              REAL(KIND=8) :: DBLOCSM(1089,30)
+              REAL(KIND=8) :: DIFFUSKZS(1089,30)
+              REAL(KIND=8) :: DIFFUSKZT(1089,30)
+              INTEGER(KIND=4) :: IKPPKEY
+              REAL(KIND=8) :: DIFFUS(1089,0:31,3)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE RI_IWMIX
+          END INTERFACE 
+        END MODULE RI_IWMIX__genmod

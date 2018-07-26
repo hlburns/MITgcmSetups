@@ -1,0 +1,9 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:27:45 2017
+        MODULE MON_KE__genmod
+          INTERFACE 
+            SUBROUTINE MON_KE(MYITER,MYTHID)
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MON_KE
+          END INTERFACE 
+        END MODULE MON_KE__genmod

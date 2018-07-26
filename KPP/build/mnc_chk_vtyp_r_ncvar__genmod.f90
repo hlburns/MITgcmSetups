@@ -1,0 +1,14 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:26:26 2017
+        MODULE MNC_CHK_VTYP_R_NCVAR__genmod
+          INTERFACE 
+            SUBROUTINE MNC_CHK_VTYP_R_NCVAR(IND_VT,INDF,IND_FV_IDS,INDU,&
+     &IRES,MYTHID)
+              INTEGER(KIND=4) :: IND_VT
+              INTEGER(KIND=4) :: INDF
+              INTEGER(KIND=4) :: IND_FV_IDS
+              INTEGER(KIND=4) :: INDU
+              INTEGER(KIND=4) :: IRES
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MNC_CHK_VTYP_R_NCVAR
+          END INTERFACE 
+        END MODULE MNC_CHK_VTYP_R_NCVAR__genmod

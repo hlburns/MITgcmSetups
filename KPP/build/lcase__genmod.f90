@@ -1,0 +1,8 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:30:58 2017
+        MODULE LCASE__genmod
+          INTERFACE 
+            SUBROUTINE LCASE(STRING)
+              CHARACTER(*) :: STRING
+            END SUBROUTINE LCASE
+          END INTERFACE 
+        END MODULE LCASE__genmod

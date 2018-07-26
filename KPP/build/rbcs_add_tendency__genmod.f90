@@ -1,0 +1,14 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:27:55 2017
+        MODULE RBCS_ADD_TENDENCY__genmod
+          INTERFACE 
+            SUBROUTINE RBCS_ADD_TENDENCY(BI,BJ,K,TRACERNUM,MYTIME,MYTHID&
+     &)
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: K
+              INTEGER(KIND=4) :: TRACERNUM
+              REAL(KIND=8) :: MYTIME
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE RBCS_ADD_TENDENCY
+          END INTERFACE 
+        END MODULE RBCS_ADD_TENDENCY__genmod

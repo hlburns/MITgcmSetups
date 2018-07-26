@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in {0..700..20}
+for i in {0..1000..20}
     do 
        val=$(($i + 20))
        val2=$(($val + 20))

@@ -1,0 +1,20 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:25:14 2017
+        MODULE KPP_DOUBLEDIFF__genmod
+          INTERFACE 
+            SUBROUTINE KPP_DOUBLEDIFF(TTALPHA,SSBETA,KAPPART,KAPPARS,   &
+     &IKPPKEY,IMIN,IMAX,JMIN,JMAX,BI,BJ,MYTHID)
+              REAL(KIND=8) :: TTALPHA(-3:29,-3:29,31)
+              REAL(KIND=8) :: SSBETA(-3:29,-3:29,31)
+              REAL(KIND=8) :: KAPPART(-3:29,-3:29,30)
+              REAL(KIND=8) :: KAPPARS(-3:29,-3:29,30)
+              INTEGER(KIND=4) :: IKPPKEY
+              INTEGER(KIND=4) :: IMIN
+              INTEGER(KIND=4) :: IMAX
+              INTEGER(KIND=4) :: JMIN
+              INTEGER(KIND=4) :: JMAX
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE KPP_DOUBLEDIFF
+          END INTERFACE 
+        END MODULE KPP_DOUBLEDIFF__genmod

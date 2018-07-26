@@ -1,0 +1,15 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:22:27 2017
+        MODULE DEBUG_FLD_STATS_RL__genmod
+          INTERFACE 
+            SUBROUTINE DEBUG_FLD_STATS_RL(MYNR,ARR,THEMIN,THEMAX,THEMEAN&
+     &,THESD,MYTHID)
+              INTEGER(KIND=4) :: MYNR
+              REAL(KIND=8) :: ARR(-3:29,-3:29,MYNR,1,1)
+              REAL(KIND=8) :: THEMIN
+              REAL(KIND=8) :: THEMAX
+              REAL(KIND=8) :: THEMEAN
+              REAL(KIND=8) :: THESD
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE DEBUG_FLD_STATS_RL
+          END INTERFACE 
+        END MODULE DEBUG_FLD_STATS_RL__genmod

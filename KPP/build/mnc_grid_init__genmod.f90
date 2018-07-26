@@ -1,0 +1,12 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:26:21 2017
+        MODULE MNC_GRID_INIT__genmod
+          INTERFACE 
+            SUBROUTINE MNC_GRID_INIT(FNAME,GNAME,NDIM,DNAMES,MYTHID)
+              INTEGER(KIND=4) :: NDIM
+              CHARACTER(*) :: FNAME
+              CHARACTER(*) :: GNAME
+              CHARACTER(*) :: DNAMES(NDIM)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MNC_GRID_INIT
+          END INTERFACE 
+        END MODULE MNC_GRID_INIT__genmod

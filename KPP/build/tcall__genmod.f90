@@ -1,0 +1,8 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:18:06 2017
+        MODULE TCALL__genmod
+          INTERFACE 
+            SUBROUTINE TCALL(STRING)
+              CHARACTER(*) :: STRING
+            END SUBROUTINE TCALL
+          END INTERFACE 
+        END MODULE TCALL__genmod

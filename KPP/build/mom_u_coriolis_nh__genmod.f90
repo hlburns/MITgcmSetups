@@ -1,0 +1,14 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:26:45 2017
+        MODULE MOM_U_CORIOLIS_NH__genmod
+          INTERFACE 
+            SUBROUTINE MOM_U_CORIOLIS_NH(BI,BJ,K,WFLD,UCORIOLISTERM,    &
+     &MYTHID)
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: K
+              REAL(KIND=8) :: WFLD(-3:29,-3:29,30,1,1)
+              REAL(KIND=8) :: UCORIOLISTERM(-3:29,-3:29)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MOM_U_CORIOLIS_NH
+          END INTERFACE 
+        END MODULE MOM_U_CORIOLIS_NH__genmod

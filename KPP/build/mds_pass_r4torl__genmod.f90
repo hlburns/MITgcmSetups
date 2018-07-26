@@ -1,0 +1,19 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:25:34 2017
+        MODULE MDS_PASS_R4TORL__genmod
+          INTERFACE 
+            SUBROUTINE MDS_PASS_R4TORL(BUFFER,ARRFLD,OLI,OLJ,NNZ,KLO,   &
+     &KSIZE,BIARG,BJARG,COPYTO,MYTHID)
+              INTEGER(KIND=4) :: KSIZE
+              INTEGER(KIND=4) :: NNZ
+              INTEGER(KIND=4) :: OLJ
+              INTEGER(KIND=4) :: OLI
+              REAL(KIND=4) :: BUFFER(1-OLI:25+OLI,1-OLJ:25+OLJ,NNZ,1,1)
+              REAL(KIND=8) :: ARRFLD(-3:29,-3:29,KSIZE,1,1)
+              INTEGER(KIND=4) :: KLO
+              INTEGER(KIND=4) :: BIARG
+              INTEGER(KIND=4) :: BJARG
+              LOGICAL(KIND=4) :: COPYTO
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MDS_PASS_R4TORL
+          END INTERFACE 
+        END MODULE MDS_PASS_R4TORL__genmod

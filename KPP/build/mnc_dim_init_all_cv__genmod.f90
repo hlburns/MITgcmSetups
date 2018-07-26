@@ -1,0 +1,15 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:26:15 2017
+        MODULE MNC_DIM_INIT_ALL_CV__genmod
+          INTERFACE 
+            SUBROUTINE MNC_DIM_INIT_ALL_CV(FNAME,DNAME,DLEN,DOWRITE,BI, &
+     &BJ,MYTHID)
+              CHARACTER(*) :: FNAME
+              CHARACTER(*) :: DNAME
+              INTEGER(KIND=4) :: DLEN
+              CHARACTER(LEN=1) :: DOWRITE
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MNC_DIM_INIT_ALL_CV
+          END INTERFACE 
+        END MODULE MNC_DIM_INIT_ALL_CV__genmod

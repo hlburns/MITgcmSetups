@@ -1,0 +1,17 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:31:54 2017
+        MODULE EXTERNAL_FORCING_T__genmod
+          INTERFACE 
+            SUBROUTINE EXTERNAL_FORCING_T(IMIN,IMAX,JMIN,JMAX,BI,BJ,KLEV&
+     &,MYTIME,MYTHID)
+              INTEGER(KIND=4) :: IMIN
+              INTEGER(KIND=4) :: IMAX
+              INTEGER(KIND=4) :: JMIN
+              INTEGER(KIND=4) :: JMAX
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: KLEV
+              REAL(KIND=8) :: MYTIME
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE EXTERNAL_FORCING_T
+          END INTERFACE 
+        END MODULE EXTERNAL_FORCING_T__genmod

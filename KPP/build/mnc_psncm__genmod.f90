@@ -1,0 +1,10 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:26:26 2017
+        MODULE MNC_PSNCM__genmod
+          INTERFACE 
+            SUBROUTINE MNC_PSNCM(OSTRING,IVAL,N)
+              CHARACTER(*) :: OSTRING
+              INTEGER(KIND=4) :: IVAL
+              INTEGER(KIND=4) :: N
+            END SUBROUTINE MNC_PSNCM
+          END INTERFACE 
+        END MODULE MNC_PSNCM__genmod

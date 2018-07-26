@@ -1,0 +1,18 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:28:25 2017
+        MODULE TIMEAVE_CUMUL_2VFC__genmod
+          INTERFACE 
+            SUBROUTINE TIMEAVE_CUMUL_2VFC(FLDTAVE,FLD1,FLD2,FLD3,KSIZE, &
+     &DIR,DELTATLOC,BI,BJ,MYTHID)
+              INTEGER(KIND=4) :: KSIZE
+              REAL(KIND=8) :: FLDTAVE(-3:29,-3:29,KSIZE,1,1)
+              REAL(KIND=8) :: FLD1(-3:29,-3:29,KSIZE,1,1)
+              REAL(KIND=8) :: FLD2(-3:29,-3:29,KSIZE,1,1)
+              REAL(KIND=8) :: FLD3(-3:29,-3:29,KSIZE,1,1)
+              INTEGER(KIND=4) :: DIR
+              REAL(KIND=8) :: DELTATLOC
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE TIMEAVE_CUMUL_2VFC
+          END INTERFACE 
+        END MODULE TIMEAVE_CUMUL_2VFC__genmod

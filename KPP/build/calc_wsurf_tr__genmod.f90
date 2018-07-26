@@ -1,0 +1,14 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:31:23 2017
+        MODULE CALC_WSURF_TR__genmod
+          INTERFACE 
+            SUBROUTINE CALC_WSURF_TR(THETAFLD,SALTFLD,WVELFLD,MYTIME,   &
+     &MYITER,MYTHID)
+              REAL(KIND=8) :: THETAFLD(-3:29,-3:29,30,1,1)
+              REAL(KIND=8) :: SALTFLD(-3:29,-3:29,30,1,1)
+              REAL(KIND=8) :: WVELFLD(-3:29,-3:29,30,1,1)
+              REAL(KIND=8) :: MYTIME
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE CALC_WSURF_TR
+          END INTERFACE 
+        END MODULE CALC_WSURF_TR__genmod

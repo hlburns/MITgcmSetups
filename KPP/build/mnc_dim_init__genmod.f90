@@ -1,0 +1,11 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:26:16 2017
+        MODULE MNC_DIM_INIT__genmod
+          INTERFACE 
+            SUBROUTINE MNC_DIM_INIT(FNAME,DNAME,DLEN,MYTHID)
+              CHARACTER(*) :: FNAME
+              CHARACTER(*) :: DNAME
+              INTEGER(KIND=4) :: DLEN
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE MNC_DIM_INIT
+          END INTERFACE 
+        END MODULE MNC_DIM_INIT__genmod

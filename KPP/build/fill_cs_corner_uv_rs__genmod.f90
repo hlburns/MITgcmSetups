@@ -1,0 +1,14 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:30:19 2017
+        MODULE FILL_CS_CORNER_UV_RS__genmod
+          INTERFACE 
+            SUBROUTINE FILL_CS_CORNER_UV_RS(WITHSIGNS,UFLD,VFLD,BI,BJ,  &
+     &MYTHID)
+              LOGICAL(KIND=4) :: WITHSIGNS
+              REAL(KIND=8) :: UFLD(-3:29,-3:29)
+              REAL(KIND=8) :: VFLD(-3:29,-3:29)
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE FILL_CS_CORNER_UV_RS
+          END INTERFACE 
+        END MODULE FILL_CS_CORNER_UV_RS__genmod

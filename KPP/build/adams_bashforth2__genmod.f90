@@ -1,0 +1,18 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:31:01 2017
+        MODULE ADAMS_BASHFORTH2__genmod
+          INTERFACE 
+            SUBROUTINE ADAMS_BASHFORTH2(BI,BJ,K,KSIZE,GTRACER,GTRNM1,   &
+     &AB_GTR,STARTAB,MYITER,MYTHID)
+              INTEGER(KIND=4) :: KSIZE
+              INTEGER(KIND=4) :: BI
+              INTEGER(KIND=4) :: BJ
+              INTEGER(KIND=4) :: K
+              REAL(KIND=8) :: GTRACER(-3:29,-3:29,KSIZE,1,1)
+              REAL(KIND=8) :: GTRNM1(-3:29,-3:29,KSIZE,1,1)
+              REAL(KIND=8) :: AB_GTR(-3:29,-3:29)
+              INTEGER(KIND=4) :: STARTAB
+              INTEGER(KIND=4) :: MYITER
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE ADAMS_BASHFORTH2
+          END INTERFACE 
+        END MODULE ADAMS_BASHFORTH2__genmod

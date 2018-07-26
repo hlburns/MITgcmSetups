@@ -1,0 +1,8 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 10 17:32:12 2017
+        MODULE INI_CORI__genmod
+          INTERFACE 
+            SUBROUTINE INI_CORI(MYTHID)
+              INTEGER(KIND=4) :: MYTHID
+            END SUBROUTINE INI_CORI
+          END INTERFACE 
+        END MODULE INI_CORI__genmod
